@@ -308,12 +308,19 @@ section{
 #skills .row{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: center;
+    
+    
 }
     #skills .column{
         width: 40%;
         min-width: 400px;
         text-align: left;
+    }
+
+    #skills .column.right{
+        width:30%;
+        min-width: 400px;
     }
 
     #skills .skill{
@@ -330,11 +337,12 @@ section{
     .skill-container{
         position: relative;
         margin: 10px 0px 10px 10px;
+        width: 100%;
     }
 
     .progress-bar {
         background-color: lightgray;
-        width: 80%;
+        width: 100%;
         height: 22px;
         display: inline-block;
         position: relative;
@@ -593,3 +601,11 @@ body {
 **************************/
 
 
+
+
+
+@media screen and (max-width: 530px) {
+    nav{
+        display: none;
+    }
+}
