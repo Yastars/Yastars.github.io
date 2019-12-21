@@ -314,13 +314,13 @@ section{
 }
     #skills .column{
         width: 40%;
-        min-width: 400px;
+        min-width: 350px;
         text-align: left;
     }
 
     #skills .column.right{
-        width:30%;
-        min-width: 400px;
+        width:40%;
+        min-width: 250px;
     }
 
     #skills .skill{
@@ -376,7 +376,7 @@ section{
         font-family: Verdana, Geneva, Tahoma, sans-serif;
         font-weight: 600;
         font-size: 24px;
-        color: crimson;
+        color: #CC3D3F;
       }
 
       #skills .column p, #contact p{
@@ -389,7 +389,7 @@ section{
           width: 300px;
           border-radius: 50%;
           margin: 10px auto;
-          border: 5px solid crimson;
+          border: 5px solid #CC3D3F;
           
       }
 
