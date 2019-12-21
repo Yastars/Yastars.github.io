@@ -263,6 +263,7 @@ section{
 
 #about .row{
     display: flex;
+    flex-wrap: wrap;
     margin: 0 100px 50px;
     text-align: center;
     flex-basis: auto;
@@ -270,7 +271,8 @@ section{
 
 }
     #about .row .column{
-        width: 40%;
+        width: 20%;
+        min-width:150px;
         margin: 20px 20px 10px 20px;
         box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);        
         padding: 50px;
