@@ -272,10 +272,12 @@ section{
 }
     #about .row .column{
         width: 20%;
-        min-width:150px;
-        margin: 20px 20px 10px 20px;
+        min-width:220px;
+        /*margin: 20px 20px 10px 20px;*/
+        margin: 2rem 1.5rem 2rem 1.5rem;
         box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);        
         padding: 50px;
+        
         background: rgb(245, 248, 245);
     }
         #about .row .column .icon{
@@ -305,10 +307,12 @@ section{
 
 #skills .row{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-evenly;
 }
     #skills .column{
         width: 40%;
+        min-width: 400px;
         text-align: left;
     }
 
@@ -512,7 +516,8 @@ body {
 }
 
 .mix {
-    min-width: 32%;
+    width: 32%;
+    min-width: 300px;
     height: 208px;   
 }
 
