@@ -371,7 +371,7 @@ section{
         color: crimson;
       }
 
-      #skills .column p{
+      #skills .column p, #contact p{
           width:80%;
           margin:10px auto;
           font-family: Verdana, Geneva, Tahoma, sans-serif;
