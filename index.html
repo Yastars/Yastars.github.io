@@ -21,14 +21,17 @@
 
 
     <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
-    
+
+
+
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css" rel="stylesheet">
 
 
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
 
-    
+
 
 
 
@@ -36,7 +39,7 @@
 
 <body>
 
-    <div class="cont-slider">
+    <div id="home" class="cont-slider">
         <div class="slider">
             <article class="slide one"><span></span></article>
             <!--
@@ -60,14 +63,14 @@
             <a href="#skills" class="borderBtn scrollto">MORE ABOUT ME</a>
         </div>
     </div>
- 
 
-    <nav>
+
+    <nav id="navbar">
         <ul>
-            <li><a dest="home">Home</a></li>
-            <li><a dest="about">About</a></li>
-            <li><a dest="portfolio">Portfolio</a></li>
-            <li><a dest="contact">Contact</a></li>
+            <li class="btn active"><a href="#home">Home</a></li>
+            <li class="btn"><a href="#about">About</a></li>
+            <li class="btn"><a href="#portfolio">Portfolio</a></li>
+            <li class="btn"><a href="#contact">Contact</a></li>
         </ul>
     </nav>
 
@@ -122,30 +125,20 @@
                 <p>Software and Service Architect, Full Stack Developer
                     with 5 years of experience architecting and creating highly scalable,
                     reliable applications.</p>
+                <p>Currently working at <a href="https://www.roksh.com/" target="_blank">Roksh.com</a> as a Web
+                    Developer<br />
+                    Other ongoing project : <a href="https://chorouk-app.herokuapp.com/" target="_blank">Chorouk
+                        Association</a> (Django + Angular)
+                </p>
             </div>
 
             <div class="column right">
+
                 <div class="skill-container">
-                    <span class="skill"><strong>HTML</strong></span>
+                    <span class="skill"><strong>Angular</strong></span>
                     <div class="progress-bar">
                         <span class="progress-value" style="max-width:90%; width: 90%;"></span>
                         <span class="perc">90%</span>
-                    </div>
-                </div>
-
-                <div class="skill-container">
-                    <span class="skill"><strong>CSS</strong></span>
-                    <div class="progress-bar">
-                        <span class="progress-value" style="max-width:80%; width: 80%;"></span>
-                        <span class="perc">80%</span>
-                    </div>
-                </div>
-
-                <div class="skill-container">
-                    <span class="skill"><strong>Javascript</strong></span>
-                    <div class="progress-bar">
-                        <span class="progress-value" style="max-width:70%; width: 70%;"></span>
-                        <span class="perc">70%</span>
                     </div>
                 </div>
 
@@ -190,18 +183,10 @@
                 </div>
 
                 <div class="skill-container">
-                    <span class="skill"><strong>Python</strong></span>
+                    <span class="skill"><strong>Python/Django</strong></span>
                     <div class="progress-bar">
                         <span class="progress-value" style="max-width:80%; width: 80%;"></span>
                         <span class="perc">80%</span>
-                    </div>
-                </div>
-
-                <div class="skill-container">
-                    <span class="skill"><strong>UI Design</strong></span>
-                    <div class="progress-bar">
-                        <span class="progress-value" style="max-width:50%; width: 50%;"></span>
-                        <span class="perc">50%</span>
                     </div>
                 </div>
 
@@ -210,6 +195,38 @@
                     <div class="progress-bar">
                         <span class="progress-value" style="max-width:70%; width: 70%;"></span>
                         <span class="perc">70%</span>
+                    </div>
+                </div>
+
+                <div class="skill-container">
+                    <span class="skill"><strong>HTML</strong></span>
+                    <div class="progress-bar">
+                        <span class="progress-value" style="max-width:90%; width: 90%;"></span>
+                        <span class="perc">90%</span>
+                    </div>
+                </div>
+
+                <div class="skill-container">
+                    <span class="skill"><strong>CSS</strong></span>
+                    <div class="progress-bar">
+                        <span class="progress-value" style="max-width:80%; width: 80%;"></span>
+                        <span class="perc">80%</span>
+                    </div>
+                </div>
+
+                <div class="skill-container">
+                    <span class="skill"><strong>Javascript</strong></span>
+                    <div class="progress-bar">
+                        <span class="progress-value" style="max-width:70%; width: 90%;"></span>
+                        <span class="perc">90%</span>
+                    </div>
+                </div>
+
+                <div class="skill-container">
+                    <span class="skill"><strong>UI Design</strong></span>
+                    <div class="progress-bar">
+                        <span class="progress-value" style="max-width:50%; width: 50%;"></span>
+                        <span class="perc">50%</span>
                     </div>
                 </div>
 
@@ -231,7 +248,8 @@
 
 
 
-    <section id="portfolio"><div class="title">
+    <section id="portfolio">
+        <div class="title">
             Portfolio
         </div>
         <div class="controls">
@@ -249,7 +267,7 @@
                 <img src="images/Projects/Recyclean.png">
             </div>
             <div class="mix python">
-                    <img src="images/Projects/E-Card.jpg">
+                <img src="images/Projects/E-Card.jpg">
             </div>
             <div class="mix php">
                 <img src="images/Projects/Eloboost.png">
@@ -262,10 +280,10 @@
             </div>
 
             <div class="mix zbi">
-                    <img src="images/Projects/Recyclean.png">
-                </div>
+                <img src="images/Projects/Recyclean.png">
+            </div>
 
-            
+
 
         </div>
     </section>
@@ -275,15 +293,62 @@
             Contact
         </div>
         <div></div>
-        <p>
-            yassine.qassar@gmail.com
-        </p>
+        
+
+        <div id="socialSharing">
+            <a href="https://www.facebook.com/yassineQs/" target="_blank">
+                <span id="facebook" class="fa-stack fa-lg">
+                    <i class="fa fa-facebook fa-stack-1x"></i>
+                </span>
+            </a>
+            <a href="https://twitter.com/yassineQs" target="_blank">
+                <span id="twitter" class="fa-stack fa-lg">
+                    <i class="fa fa-twitter fa-stack-1x"></i>
+                </span>
+            </a>
+
+            <a id="myBtn">
+                <span id="googleplus" class="fa-stack fa-lg">
+                    <i class="fa fa-google-plus fa-stack-1x"></i>
+                </span>
+            </a>
+            <a href="https://www.linkedin.com/in/yassineqassar/" target="_blank">
+                <span id="linkedin" class="fa-stack fa-lg">
+                    <i class="fa fa-linkedin fa-stack-1x"></i>
+                </span>
+            </a>
+
+            <a href="https://github.com/Yastars" target="_blank">
+                <span id="github" class="fa-stack fa-lg">
+                    <i class="fa fa-github fa-stack-1x"></i>
+                </span>
+            </a>
+            <a href="https://wa.me/212633797009?text=Hello there!" data-action="share/whatsapp/share" target="_blank">
+                <span id="whatsapp" class="fa-stack fa-lg">
+                    <i class="fa fa-whatsapp fa-stack-1x"></i>
+                </span>
+            </a>
+        </div>
+
+
     </section>
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p> yassine.qassar@gmail.com</p>
+        </div>
+
+    </div>
 
 
 
 
     <script src="js/patrickkunka-mixitup-61dac05/dist/mixitup.min.js"></script>
+    <script src="js/index.js"></script>
 </body>
 
 <footer>
